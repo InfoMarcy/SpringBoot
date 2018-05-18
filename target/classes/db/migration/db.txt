@@ -1,0 +1,26 @@
+Create Table Shipwreck(
+    id   int Auto_Increment,
+	name Varchar(255),
+	description Varchar(2000),
+	condition Varchar(255),
+	depth int,
+	latitude Double,
+	longitude Double,
+	yearDiscovered int
+);
+
+
+Select * From Shipwreck;
+
+DROP TABLE IF EXISTS Shipwreck;
+
+
+INSERT INTO Shipwreck VALUES(1, 'Hello');
+
+INSERT INTO Shipwreck VALUES(2, 'World');
+
+SELECT * FROM Shipwreck ORDER BY ID;
+
+UPDATE Shipwreck SET NAME='Hi' WHERE ID=1;
+
+DELETE FROM Shipwreck WHERE ID=2;
